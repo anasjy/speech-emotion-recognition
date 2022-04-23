@@ -26,25 +26,9 @@ Mel-Frequency Cepstral Coefficients, which are a representation of the short-ter
 The Mel scale is important because it better approximates human-based perception of sound as opposed to linear scales. In filter-source theory, "the source is the vocal cords and the filter represents the vocal tract." The length and shape of the vocal tract determine how sound is outputted from a human and the cepstrum can describe the filter. 
 
 In our project we have combined two models: pretrained DenseNet for mel-spectrograms and CNN for mfccs. 
-You can find a more detailed description, EDA and ML models [**here**](https://github.com/talbaram3192/Emotion_Recognition)
 
-## Installation
 
-It is recommended to use the provided `requirements.txt` file to set your virtual environment.
 
-To install the app run this commands
-
-```sh
-!git clone https://github.com/CyberMaryVer/speech-emotion-webapp.git
-!cd speech-emotion-webapp
-!python -m virtualenv your_venv
-!your_venv/Scripts/activate
-!pip install -r requirements.txt
-```
-After that you can run the app
-```sh
-!streamlit run app.py
-```
 ## Usage
 Example of an execution:
 
@@ -59,5 +43,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 
-## License
-**Speech Emotion Recognition Project** is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+
