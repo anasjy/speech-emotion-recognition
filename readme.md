@@ -1,6 +1,6 @@
 # Speech Emotion Recognition ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg) ![version](https://img.shields.io/badge/version-1.0.0-green)
 
-Web-application based on ML model for recognition of emotion for selected audio file. You can try it on [streamlit sharing platform](https://share.streamlit.io/cybermaryver/speech-emotion-webapp/app.py) or on [amazon server](http://34.217.207.244:8501/)
+Web-application based on ML model for recognition of emotion for selected audio file. You can try it on [streamlit sharing platform](https://share.streamlit.io/anasjy/speech-emotion-recognition/main/app.py) or on [amazon server](http://34.217.207.244:8501/)
 ![img](images/smileyfacesboxes.jpg)
 
 ## Description
@@ -48,7 +48,7 @@ After that you can run the app
 ## Usage
 Example of an execution:
 
-You can try the app [here](https://share.streamlit.io/cybermaryver/speech-emotion-webapp/app.py)
+You can try the app [here](https://share.streamlit.io/anasjy/speech-emotion-recognition/main/app.py)
 ![Alt Text](demo2.gif)
 
 
@@ -57,9 +57,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Team
 
-[![CyberMaryVer](https://avatars3.githubusercontent.com/u/66170525?s=40&v=4)](https://github.com/CyberMaryVer) | [![Tal](https://avatars.githubusercontent.com/u/57663531?s=40&v=4)](https://github.com/talbaram3192) | [![Asher](https://avatars.githubusercontent.com/u/73426116?s=40&v=4)](https://github.com/asher1112)
---- | --- | ---
-[Maria Startseva](https://github.com/CyberMaryVer) | [Tal Baram](https://github.com/talbaram3192) | [Asher](https://github.com/asher1112)
+
 
 ## License
 **Speech Emotion Recognition Project** is released under the [MIT License](http://www.opensource.org/licenses/MIT).
