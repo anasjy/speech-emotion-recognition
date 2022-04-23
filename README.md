@@ -37,4 +37,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Team
 Mohammad Anas Ansari
-Mohd navaid ansari
+|| Mohd navaid ansari
