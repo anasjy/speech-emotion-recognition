@@ -21,7 +21,7 @@ Mel-Frequency Cepstral Coefficients, which are a representation of the short-ter
 
 The Mel scale is important because it better approximates human-based perception of sound as opposed to linear scales. In filter-source theory, "the source is the vocal cords and the filter represents the vocal tract." The length and shape of the vocal tract determine how sound is outputted from a human and the cepstrum can describe the filter. 
 
-You can find a more detailed description, EDA and ML models [**here**](https://github.com/anasjy/speech-emotion-recognition/blob/main/speech-emotion-recognition.ipynb)
+You can find a more detailed description about code [**here**](https://github.com/anasjy/speech-emotion-recognition/blob/main/speech-emotion-recognition.ipynb)
 
 
 
