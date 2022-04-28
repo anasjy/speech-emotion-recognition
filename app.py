@@ -158,13 +158,12 @@ def main():
     with st.sidebar:
         st.image(side_img, width=300)
     st.sidebar.subheader("Menu")
-    website_menu = st.sidebar.selectbox("Menu", ("Emotion Recognition",  "Our team",
-                                                  "Relax"))
+    website_menu = st.sidebar.selectbox("Menu", ("Emotion Recognition",  "Our team" ))
     st.set_option('deprecation.showfileUploaderEncoding', False)
 
     if website_menu == "Emotion Recognition":
         st.sidebar.subheader("Model")
-        model_type = st.sidebar.selectbox("How would you like to predict?", ("mfccs", "mel-specs"))
+        model_type = st.sidebar.selectbox("which feature would you like to predict?", ("mfccs", "mel-specs"))
         em3 = em6 = em7 = gender = False
         st.sidebar.subheader("Settings")
 
@@ -222,6 +221,7 @@ def main():
                     st.write(fig)
                 else:
                     pass
+             # this is for recording file      
             #     st.write("Record audio file")
             #     if st.button('Record'):
             #         with st.spinner(f'Recording for 5 seconds ....'):
@@ -235,43 +235,15 @@ def main():
             em6 = st.sidebar.checkbox("6 emotions", True)
             em7 = st.sidebar.checkbox("7 emotions")
             gender = st.sidebar.checkbox("gender")
-
+            
+# this is mel-specfeature
         elif model_type == "mel-specs":
             st.sidebar.warning("This model is temporarily disabled")
 
         else:
             st.sidebar.warning("This model is temporarily disabled")
 
-        # with st.sidebar.expander("Change colors"):
-        #     st.sidebar.write("Use this options after you got the plots")
-        #     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
-        #
-        #     with col1:
-        #         a = st.color_picker("Angry", value="#FF0000")
-        #     with col2:
-        #         f = st.color_picker("Fear", value="#800080")
-        #     with col3:
-        #         d = st.color_picker("Disgust", value="#A52A2A")
-        #     with col4:
-        #         sd = st.color_picker("Sad", value="#ADD8E6")
-        #     with col5:
-        #         n = st.color_picker("Neutral", value="#808080")
-        #     with col6:
-        #         sp = st.color_picker("Surprise", value="#FFA500")
-        #     with col7:
-        #         h = st.color_picker("Happy", value="#008000")
-        #     if st.button("Update colors"):
-        #         global COLOR_DICT
-        #         COLOR_DICT = {"neutral": n,
-        #                       "positive": h,
-        #                       "happy": h,
-        #                       "surprise": sp,
-        #                       "fear": f,
-        #                       "negative": a,
-        #                       "angry": a,
-        #                       "sad": sd,
-        #                       "disgust": d}
-        #         st.success(COLOR_DICT)
+       
 
         if audio_file is not None:
             st.markdown("## Analyzing...")
