@@ -158,8 +158,8 @@ def main():
     with st.sidebar:
         st.image(side_img, width=300)
     st.sidebar.subheader("Menu")
-    website_menu = st.sidebar.selectbox("Menu", ("Emotion Recognition", "Project description", "Our team",
-                                                 "Leave feedback", "Relax"))
+    website_menu = st.sidebar.selectbox("Menu", ("Emotion Recognition",  "Our team",
+                                                  "Relax"))
     st.set_option('deprecation.showfileUploaderEncoding', False)
 
     if website_menu == "Emotion Recognition":
@@ -406,24 +406,7 @@ def main():
             
        
 
-    elif website_menu == "Leave feedback":
-        st.subheader("Leave feedback")
-        user_input = st.text_area("Your feedback is greatly appreciated")
-        user_name = st.selectbox("Choose your personality", ["checker1", "checker2", "checker3", "checker4"])
-
-        if st.button("Submit"):
-            st.success(f"Message\n\"\"\"{user_input}\"\"\"\nwas sent")
-
-            if user_input == "log123456" and user_name == "checker4":
-                with open("log0.txt", "r", encoding="utf8") as f:
-                    st.text(f.read())
-            elif user_input == "feedback123456" and user_name == "checker4":
-                with open("log.txt", "r", encoding="utf8") as f:
-                    st.text(f.read())
-            else:
-                log_file(user_name + " " + user_input)
-                thankimg = Image.open("images/sticky.png")
-                st.image(thankimg)
+    
 
     else:
         import requests
